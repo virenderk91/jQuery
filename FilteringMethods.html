@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+
+    //The first() method returns the first element of the specified elements.
+    $("div").first().css("background-color", "yellow");
+
+     
+    //The first() method returns the first element of the specified elements.
+    // $("div").last().css("background-color", "yellow");
+
+
+    //The eq() method returns an element with a specific index number of the selected elements.
+    $("li").eq(3).css({"background-color": "red", "font-size": "200%"});  // eq(3) is a index Number.
+   
+   //The filter() method lets you specify a criteria. Elements that do not match the criteria are removed from the selection, and those that match will be returned.
+   $("p").filter(".intro").css("background-color", "yellow");
+     
+   
+   //The not() method returns all elements that do not match the criteria.
+    $("#p1").not(".intro").css("background-color", "red");
+
+    
+});
+</script>
+</head>
+<body>
+
+<h1>Filtering Methods</h1>
+
+<p>This is a paragraph.</p>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in a div.</p>
+  <p>Another paragraph in a div.</p>
+</div>
+<br>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+<br>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+
+<hr>
+
+<h1>eq() method </h1>
+<ul>
+<li>1 index[0]</li>
+<li>2 index[1]</li>
+<li>3 index[2]</li>
+<li>4 index[3]</li>
+<li>5 index[4]</li>
+<li>6 index[5]</li>
+<li>7 index[6]</li>
+<li>8 index[7]</li>
+<li>9 index[8]</li>
+<li>10 index[9]</li>
+</ul>
+
+
+<h1>filter() method </h1>
+<p>My name is Donald.</p>
+<p class="intro">I live in Duckburg.</p>
+<p class="intro">I love Duckburg.</p>
+<p>My best friend is Mickey.</p>
+
+
+
+
+
+
+</body>
+</html>

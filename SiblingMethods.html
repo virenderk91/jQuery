@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.siblings * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery.nicescroll.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    // The siblings() method returns all sibling elements of the selected element.
+    $("h2").siblings().css({"color": "red", "border": "2px solid red"});
+
+    // The next() method returns the next sibling element of the selected element.
+    // $("h2").next().css({"color": "red", "border": "2px solid red"});
+
+    //  //The nextAll() method returns all next sibling elements of the selected element.
+    // $("h2").nextAll().css({"color": "red", "border": "2px solid red"});
+ 
+
+    // The nextUntil() method returns all next sibling elements between two given arguments.
+    // The following example returns all sibling elements between a <h2> and a <h6> element: 
+    // $("h2").nextUntil("h6").css({"color": "red", "border": "2px solid red"});
+
+
+    //The prev(), prevAll() and prevUntil() methods work just like the methods above but with reverse functionality: they return previous sibling elements (traverse backwards along sibling elements in the DOM tree, instead of forward).
+
+});
+</script>
+</head>
+<body class="siblings">
+
+<div>div (parent)
+  <p>p</p>
+  <span>span</span>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <h4>h4</h4>
+  <h5>h5</h5>
+  <h6>h6</h6>
+  <p>p</p>
+</div>
+
+
+
+</body>
+</html>

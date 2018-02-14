@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("div p").last().css("background-color", "yellow");
+});
+</script>
+</head>
+<body>
+<h3>Add a yellow background color to the last <p></p> element inside the last <div></div> element.<h3>
+<div style="border: 1px solid black;">
+  <p>This is the first paragraph in a div.</p>
+  <p>This is the last paragraph in a div.</p>
+</div><br>
+
+<div style="border: 1px solid black;">
+  <p>This is the first paragraph in another div.</p>
+  <p>This is the last paragraph in another div.</p>
+</div>
+
+</body>
+</html>
